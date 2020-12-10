@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Gallery Page</title>
+        <link rel="stylesheet" href="style/styleGallery.css">
+        <script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
+    <style>
+    
+    html {
+            font-weight: bold;
+            background-color: blue;
+            height: auto;
+            width: 100%;
+     }    
+        
+    img {
+            width: 50%;
+    }
+
+        .section {
+            border-radius: 10px;
+            background-color: #EE4422;
+            color: black;
+            text-indent: 0px;
+            margin: 10px;
+            padding: 20px;
+            height: 800px;
+            overflow: none;
+	}
+        .section2 {
+            border-radius: 10px;
+            background-color: #EE4422;
+            color: black;
+            font-size: 1.5rem;
+            text-indent: 0px;
+            margin: 10px;
+            padding: 20px;
+            height: 300px;
+            width: 100%
+            overflow: auto;
+	}
+    .sectionF {                
+            border-radius: 10px;
+            background-color: #F6FF29;
+            color: black;
+            text-indent: 0px;
+            margin: 10px;
+            padding: 20px;
+            height: 100px;
+            width: 100%;
+            overflow: auto;
+	}
+
+
+
+	#header {
+                background: #BCCE98;
+                height: 150px;
+                padding-left: 10px;
+                font-stretch: ;
+                font-size: 1.5rem;
+            }
+            .navlist { float : left; padding : 0; margin : 0 0 0 12px; // 12px left margin, for some breathing room }
+            
+       #navlinks {
+                list-style-type: none;
+     }
+        .b1 {
+                float: right;
+                margin-right: 50px;
+        }    
+                
+        #header h1 {
+                margin-left: 50px;
+                padding-top: 15px;
+     }
+            
+        #mainwrapper {
+                overflow: hidden;
+            }
+            
+        #contentwrapper{
+                float: left;
+                width: auto;
+                padding-left: 20px;
+    }
+            
+        #content {   
+                margin-left: 5px;
+                padding-bottom: 10010px;
+                margin-bottom: -10000px;
+                width: 1000px;
+     }
+         
+            
+		#backImg {
+				width: 800px; 
+				height: 500px;
+				padding-top: 50px;
+				font-size: 2rem;
+				margin-left: 150px;
+				margin-top: 10px;
+				font-color: #FFF;
+				text-align: center;
+				background-color: orange;
+	
+				position: absolute;
+				z-index: 0;
+}
+            
+        #picOne {
+                margin-left: 100px;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 12;
+            }    
+     /*       
+              #gray {
+        filter: grayscale(75%);
+}
+    #night {
+        filter: brightness(1.0);
+}
+    #sepia {
+        filter: sepia(90%);
+            
+             */   
+            #picTwo {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 11;
+                margin-top: 0px;
+            }        
+            #pic3 {
+                margin-left: 100px;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 10;
+            }        
+            #pic4 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 9;
+                margin-top: 0px;
+            }
+            #pic5 {
+                margin-left: 100px;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 8;
+				filter: grayscale(75%);
+            }        
+            #pic6 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 7;
+                margin-top: 0px;
+                filter: sepia(90%);
+            }        
+            #pic7 {
+                margin-left: 100px;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 6;
+           
+            }        
+            #pic8 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 5;
+                margin-top: 0px;
+            }    
+			#pic9 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 4;
+                margin-top: 0px;
+            }    
+			 #pic10 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 3;
+                margin-top: 0px;
+            }    
+			#pic11 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 2;
+                margin-top: 0px;
+            }    
+		   #pic12 {
+                margin-left: 100px;
+                position: absolute;
+                z-index: 1;
+                margin-top: 0px;
+            }    
+      <!--  /*    #pic {
+                margin-left:10px;
+                position: absolute;
+                z-index: ;
+                margin-top: 30px;
+            } */-->
+        #Hwebimages {
+                margin-left: 2%;
+            }    
+        #refresh1 {
+                margin-left: 70%;
+                margin-top: 250px;
+                font-size: 2rem;
+        }        
+            #details1 {
+                margin-left: 70%;
+                margin-top: 100px;
+                font-size: 1rem;
+            }   
+    
+    
+    
+    
+    </style>
+    </head>
+    
+    <body>
+    <header id="header">
+        <div class="innertube">
+                    <center><h1>Bimpco.com</h1></center>   
+        </div>     
+                     <ul id="navlinks">
+                        <li class="navlist"><a href="index.html">Main Page</a></li>
+                        <li  class="navlist"><a href="sports.html">Sports</a></li>
+                        <li class="navlist">
+              <a href="toys.html">Toys</a></li>
+                        <li class="navlist">
+               <ainin href="delivery.html">Delivery</a></li>
+                <li class="navlist"><a href="gallery1.html">Gallery</a></li>
+                
+                <li>
+                <table class="b1" width=”400” border=0 cellpadding=0 cellspacing=0 > <tr> <td style=”font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt”><input type=”submit” placeholder="Products" size=”32”> 
+ 
+            <button class="b1"> Search</button></table></li> </ul>
+        </div>
+            </header>
+    <body>
+        
+        
+      
+			<div class="section">
+				<div id="topofpage"> Page Top </div>
+                        
+				<div id="pics">
+                    <h1 id="Hwebimages"> My Images from Semester 1 - Introduction to Web Development. </h1>
+       
+                         
+					<img src="https://dl.dropbox.com/s/0jhsud8jwx0y11a/images.jpg" width="600px" height="600px" alt="shed-night image" id="picOne">  
+					<img src="https://dl.dropbox.com/s/925qfsuj2qy3cwh/images.jpg" width="600px" height="600px" alt="shed-day image" id="picTwo">  
+					<img src="https://dl.dropbox.com/s/0jhsud8jwx0y11a/images.jpg" width="600px" height="600px" alt="shed-night image" id="pic3">  
+					<img src="https://dl.dropbox.com/s/925qfsuj2qy3cwh/images.jpg" width="600px" height="600px" alt="shed-day image" id="pic4">  
+					<img src="https://dl.dropbox.com/s/925qfsuj2qy3cwh/images.jpg" width="600px" height="600px"alt="shed-grey image" id="pic5">  
+					<img src="https://dl.dropbox.com/s/925qfsuj2qy3cwh/images.jpg" width="600px" height="600px" alt="shed-sep image" id="pic6">  
+					<img src="https://dl.dropbox.com/s/473ekaoezht886k/images.jpg" width="600px" height="600px" alt="Card Front" id="pic7" >
+					<img src="https://dl.dropbox.com/s/6hxfv1zm8k3an4f/images.jpg" alt="Card Back" width="600px" height="600px" id="pic8">
+					<img src="https://dl.dropbox.com/s/ei5nsw7l8cme249/images.jpeg"width="600px" height="600px" alt="Moon Pic" id="pic9">
+					<img src="https://dl.dropbox.com/s/dlx6ocmjsz56vhr/images.jpg" width="600px" height="600px" alt="CarlingFord Pic1" id="pic10">
+					<img src="https://dl.dropbox.com/s/r6widm1ngfl7ut7/images.jpg" width="600px" height="600px" alt="Carlingford Pic2" id="pic11">		
+		</div>
+				<div id="backImg">
+				<p>	Thanks for viewing my gallery <br>
+					<br>
+					Please Hit Refresh!
+				</p>	
+	   </div>
+				<button id="refresh1" onClick="window.location.reload();">Restart Gallery</button>
+			       <details id="details1">
+					<summary>Click for image information:</summary>  
+				     <br>
+					<a href="https://laoiscyclist.blogspot.com/p/newgrange-knowth-and-dowth.html"> Newgrange Image supplied by Laoiscyclist:</a><br>
+					<a href="https://www.cntraveller.com/gallery/desert-art-usa"	> Nevada Art supplied by: </a> <br>
+					   David Fincher supplied by: DKIT Evening Class 				 				 
+				 </details>
+ </div>			
+        <div class="section2">                   
+            <p>
+            Please read the summary with the website information.
+
+            
+            <details>
+                <summary> Site Info! </summary>
+            <p><pre>    
+                I have used CSS, Piklr and some interactive elementes to make the site more enjoyable. I decided to do a
+                Product website as it one of the things I visit everyday.
+
+                Pg. 1 The Main electronics mainly CSS. 
+                Pg. 2 Used Piklr for Toys with my Christmas tree in the Nevada Art in desert.
+                Pg. 3. The sports page CSS and the Iframe.
+                Pg. 4 Delivery and Forms I tried to show better handling of divs and Forms.
+                    formattig. I added to my previous form with password, date and a color submit button.
+                Pg 5. Is this my Gallery I wanted to recap some of our images from Semester 1 with Jquery. 
+                ( This picture gallery is working 100% on Notepad++) 
+                </pre>
+            </p>    
+                </details>
+        </div>
+       
+        <div class="sectionF">                       
+        <div>
+                <button id="buttontop">
+            <a href="#topofpage"> Press to go back to top! </a> </button>
+            <footer id="footer">
+        <div class="innertube">
+              <center>      <p>Thanks for Visiting Bimpco.com for Customer service email: bimpco@repair.com</p></center>
+        </div>
+        </div>                
+            </footer>
+            <script type="text/javascript">
+            $(document).ready(function() {
+            $('#picOne').fadeIn(1000).delay(4000).fadeOut(1000); 
+            $('#picTwo').fadeIn(2000).delay(8000).fadeOut(2000); 
+            $('#pic3').fadeIn(3000).delay(13000).fadeOut(3000); 
+            $('#pic4').fadeIn(4000).delay(19000).fadeOut(4000);
+            $('#pic5').fadeIn(5000).delay(25000).fadeOut(5000);
+            $('#pic6').fadeIn(6000).delay(31000).fadeOut(6000);
+            $('#pic7').fadeIn(7000).delay(38000).fadeOut(7000);
+            $('#pic8').fadeIn(8000).delay(46000).fadeOut(8000); 
+			$('#pic9').fadeIn(9000).delay(55000).fadeOut(9000);
+            $('#pic10').fadeIn(10000).delay(65000).fadeOut(10000);
+            $('#pic11').fadeIn(11000).delay(76000).fadeOut(11000);
+            
+			});
+                </script> 
+        
+    
+    </body>
+</html>    
